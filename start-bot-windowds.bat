@@ -1,4 +1,4 @@
 @echo off
 python main.py
-echo Startedt the Bot!
+echo Started the Bot!
 pause
