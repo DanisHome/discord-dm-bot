@@ -27,6 +27,17 @@ async def send_dm(ctx, member: discord.Member, *, message: str):
     except discord.Forbidden:
         await ctx.send(f"I do not have permission to send a message to {member.display_name}.")
 
+from discord import Embed
+
+# help command
+@slash.slash(name="help", description="Shows all Commands in the Bot")
+async def _eingebettet(ctx): 
+    # Embed for Help
+    embed = Embed(title="🔰Commands", description="**/dm** Send a message to a mentioned user", color=0x00ff00)
+    embed.add_field(name="Feldname", value="Feldwert", inline=False)
+    await ctx.send(embed=embed)
+
+
 
 # Start the bot
 bot.run(TOKEN)
