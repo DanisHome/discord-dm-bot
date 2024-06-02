@@ -32,7 +32,7 @@ from discord import Embed
 # help command
 @slash.slash(name="help", description="Shows all Commands in the Bot")
 async def _eingebettet(ctx): 
-    # Embed for Help
+    # Embed for Help command
     embed = Embed(title="🔰Commands", description="**/dm** Send a message to a mentioned user", color=0x00ff00)
     embed.add_field(name="Feldname", value="Feldwert", inline=False)
     await ctx.send(embed=embed)
